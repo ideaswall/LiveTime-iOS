@@ -1,0 +1,21 @@
+
+/* Class = "IBUITextField"; placeholder = "Password"; ObjectID = "1XZ-C5-JDD"; */
+"1XZ-C5-JDD.placeholder" = "密码";
+
+/* Class = "IBUITextField"; placeholder = "Email"; ObjectID = "99B-ag-AlJ"; */
+"99B-ag-AlJ.placeholder" = "邮箱";
+
+/* Class = "IBUITextField"; placeholder = "Email"; ObjectID = "APA-xE-tQ9"; */
+"APA-xE-tQ9.placeholder" = "邮箱";
+
+/* Class = "IBUIButton"; normalTitle = "Has account? Go login."; ObjectID = "NEf-Ke-ViA"; */
+"NEf-Ke-ViA.normalTitle" = "已有账户？去登录吧.";
+
+/* Class = "IBUITextField"; placeholder = "Password"; ObjectID = "O8b-p8-N8n"; */
+"O8b-p8-N8n.placeholder" = "密码";
+
+/* Class = "IBUIButton"; normalTitle = "No account yet? Go sign up."; ObjectID = "cpD-Ez-vUd"; */
+"cpD-Ez-vUd.normalTitle" = "还没账户? 去注册吧.";
+
+/* Class = "IBUINavigationItem"; title = "Login"; ObjectID = "g9X-1f-lj3"; */
+"g9X-1f-lj3.title" = "登录";
