@@ -18,7 +18,7 @@
     #define kWindowHeight [UIScreen mainScreen].bounds.size.height
     #define kWindowWitdth [UIScreen mainScreen].bounds.size.width
 
-    #define kHosts @"http://121.199.58.134"
-    #define kEndpoint @""
+    #define kHosts @"http://121.199.58.134:3210/livetime"
+    #define kEndpoint @"api/v1"
 
 #endif

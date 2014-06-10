@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F02276261946A067006AC67A /* iwLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F02276251946A067006AC67A /* iwLeftViewController.m */; };
+		F022762A1946A2E1006AC67A /* iwLiveGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F02276291946A2E1006AC67A /* iwLiveGalleryViewController.m */; };
 		F03BF8F5193A1115009B9C16 /* NSString+helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F03BF8F4193A1115009B9C16 /* NSString+helper.m */; };
 		F0D2F62E19336EB10090B665 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D2F60A19336EB10090B665 /* AFHTTPRequestOperation.m */; };
 		F0D2F62F19336EB10090B665 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D2F60C19336EB10090B665 /* AFHTTPRequestOperationManager.m */; };
@@ -100,6 +102,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F02276241946A067006AC67A /* iwLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iwLeftViewController.h; sourceTree = "<group>"; };
+		F02276251946A067006AC67A /* iwLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iwLeftViewController.m; sourceTree = "<group>"; };
+		F02276281946A2E1006AC67A /* iwLiveGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iwLiveGalleryViewController.h; sourceTree = "<group>"; };
+		F02276291946A2E1006AC67A /* iwLiveGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iwLiveGalleryViewController.m; sourceTree = "<group>"; };
 		F033566D193C173A003F242E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main_iPad.strings"; sourceTree = "<group>"; };
 		F033566E193C173A003F242E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		F033566F193C173A003F242E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -384,6 +390,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F02276271946A2A1006AC67A /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				F02276281946A2E1006AC67A /* iwLiveGalleryViewController.h */,
+				F02276291946A2E1006AC67A /* iwLiveGalleryViewController.m */,
+			);
+			name = Live;
+			sourceTree = "<group>";
+		};
 		F0D2F60819336EB10090B665 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -793,9 +808,12 @@
 		F0D2F8D31931970200E94478 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F02276271946A2A1006AC67A /* Live */,
 				F0D2F8D51931973E00E94478 /* Member */,
 				F0E008031940A9E400C33FD3 /* iwMainViewController.h */,
 				F0E008041940A9E400C33FD3 /* iwMainViewController.m */,
+				F02276241946A067006AC67A /* iwLeftViewController.h */,
+				F02276251946A067006AC67A /* iwLeftViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1026,6 +1044,7 @@
 				F0D2F63219336EB10090B665 /* AFSecurityPolicy.m in Sources */,
 				F0F57BFD19345583004DDA8A /* POPAnimationTracer.mm in Sources */,
 				F0E008051940A9E400C33FD3 /* iwMainViewController.m in Sources */,
+				F02276261946A067006AC67A /* iwLeftViewController.m in Sources */,
 				F0F57C0319345583004DDA8A /* POPGeometry.mm in Sources */,
 				F0E008021940965400C33FD3 /* iwUser.m in Sources */,
 				F0D2F8D81931977100E94478 /* iwLoginViewController.m in Sources */,
@@ -1045,6 +1064,7 @@
 				F0F57BF819345583004DDA8A /* POPAnimatableProperty.mm in Sources */,
 				F0D2F63419336EB10090B665 /* AFURLRequestSerialization.m in Sources */,
 				F0D2F63019336EB10090B665 /* AFHTTPSessionManager.m in Sources */,
+				F022762A1946A2E1006AC67A /* iwLiveGalleryViewController.m in Sources */,
 				F0D2F63119336EB10090B665 /* AFNetworkReachabilityManager.m in Sources */,
 				F0D2F63519336EB10090B665 /* AFURLResponseSerialization.m in Sources */,
 				F0D2F63E19336EB10090B665 /* UIWebView+AFNetworking.m in Sources */,

@@ -10,6 +10,8 @@
 #import "POP.h"
 #import "NSString+helper.h"
 #import "iwUser.h"
+#import "iwMainViewController.h"
+#import "iwLiveGalleryViewController.h"
 
 @interface iwLoginViewController () <UITextFieldDelegate>
 
@@ -89,7 +91,8 @@
     if (_passwordField == textField)
     {
         [_passwordField resignFirstResponder];
-        [self animateSubmitButton];
+        
+        [self onSubmitButtonClick:nil];
     }
     
     return NO;
@@ -102,6 +105,11 @@
     [self animateSubmitButton];
     
     [self.view endEditing:YES];
+    
+    if (_isLogin)
+    {
+        [self loginRequest];
+    }
 }
 
 - (void)onToogleLoginAndSignUpButtonClick:(id)sender
@@ -120,10 +128,31 @@
     [iwUser loginWithUser:@{@"mail": _emailField.text, @"password": _passwordField.text}
                   success:^(id userObject) {
                       
+                      if ([[userObject valueForKey:@"status"] isEqualToString:@"true"])
+                      {
+                          iwMainViewController *mainViewController = [[iwMainViewController alloc] init];
+                          [self presentViewController:mainViewController animated:YES completion:^{
+                              
+                          }];
+                      }
                   }
                   failure:^(NSError *error) {
                       
                   }];
+}
+
+- (void)signupRequest
+{
+    [iwUser signUpWithUser:@{@"mail": _emailField.text, @"password": _passwordField.text}
+                   success:^(id userObject) {
+                       
+                       iwMainViewController *mainViewController = [[iwMainViewController alloc] init];
+                       [self presentViewController:mainViewController animated:YES completion:^{
+                           
+                       }];
+                   } failure:^(NSError *error) {
+                       
+                   }];
 }
 
 #pragma mark - Function

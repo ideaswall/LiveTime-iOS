@@ -17,4 +17,8 @@
               success:(void (^)(id userObject))success
               failure:(void (^)(NSError *error))failure;
 
++ (void)signUpWithUser:(NSDictionary *)user
+              success:(void (^)(id userObject))success
+              failure:(void (^)(NSError *error))failure;
+
 @end

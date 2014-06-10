@@ -26,4 +26,19 @@
                            message:nil];
 }
 
++ (void)signUpWithUser:(NSDictionary *)user success:(void (^)(id))success failure:(void (^)(NSError *))failure
+{
+    [iwRequest requestWithResource:@"user"
+                            action:@"signup"
+                        parameters:user
+                           success:^(id data) {
+                               success(data);
+                           }
+                           failure:^(NSError *error) {
+                               
+                           }
+                          animated:YES
+                           message:nil];
+}
+
 @end

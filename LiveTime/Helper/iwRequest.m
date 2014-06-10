@@ -38,7 +38,7 @@
     
     AFHTTPRequestOperationManager *manager = [iwRequest sharedManager];
     
-    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
     [manager POST:[NSString stringWithFormat:@"%@/%@/%@/%@", kHosts, kEndpoint, resource, action]
        parameters:parameters
